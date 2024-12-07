@@ -1,0 +1,14 @@
+<% if(success && success.length){ %>               <!--  Because the "success" variable is exist in the array, so we need to add "success.length" in the condition. -->
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+        <%= success %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
+
+
+<% if(error && error.length){ %>               <!--  Because the "success" variable is exist in the array, so we need to add "success.length" in the condition. -->
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+        <%= error %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
